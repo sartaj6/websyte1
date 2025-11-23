@@ -301,6 +301,21 @@ body {
   user-select: none;
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.button-group .red-button {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn-cssbuttons {
  --btn-color: #275efe;
  position: relative;
