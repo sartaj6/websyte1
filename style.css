@@ -301,6 +301,21 @@ body {
   user-select: none;
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.button-group .red-button {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn-cssbuttons {
  --btn-color: #275efe;
  position: relative;
@@ -313,6 +328,10 @@ body {
  background: none;
  border: none;
  outline: none;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ text-decoration: none;
  overflow: hidden;
  cursor: pointer;
  filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
@@ -368,14 +387,14 @@ body {
  flex: 1;
 }
 
-.btn-cssbuttons ul li a {
+.btn-cssbuttons ul li span {
  display: inline-flex;
  vertical-align: middle;
  transform: translateY(55px);
  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.btn-cssbuttons ul li a:hover {
+.btn-cssbuttons ul li span:hover {
  opacity: 0.5;
 }
 
@@ -388,19 +407,19 @@ body {
  transform: translateY(-55px);
 }
 
-.btn-cssbuttons:hover ul li a {
+.btn-cssbuttons:hover ul li span {
  transform: translateY(0);
 }
 
-.btn-cssbuttons:hover ul li:nth-child(1) a {
+.btn-cssbuttons:hover ul li:nth-child(1) span {
  transition-delay: 0.15s;
 }
 
-.btn-cssbuttons:hover ul li:nth-child(2) a {
+.btn-cssbuttons:hover ul li:nth-child(2) span {
  transition-delay: 0.2s;
 }
 
-.btn-cssbuttons:hover ul li:nth-child(3) a {
+.btn-cssbuttons:hover ul li:nth-child(3) span {
  transition-delay: 0.25s;
 }
 
